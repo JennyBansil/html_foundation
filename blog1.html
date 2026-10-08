@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Cascading Stylesheets (CSS)</title>
+</head>
+<body>
+   <header>
+        <h1>Jenny Bansil</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog1.html">BLOG 1</a></li>
+                <li><a href="blog2.html">BLOG 2</a></li>
+                <li><a href="blog3.html">BLOG 3</a></li>
+            </ul>
+        </nav>
+    </header>
+    <article>
+        <header>
+            <h1>Learning Cascading Stylesheets (CSS)</h1>
+            <p>Posted by <strong>Jenny Bansil</strong></p>
+        </header>
+        <p><strong>What is Cascading Stylesheets or CSS&quest;</strong></p>
+        <p>
+            <strong>Cascading Style Sheets (CSS)</strong> is a style sheet language used for specifying the presentation and styling of a document written in a markup language, such as HTML or XML (including XML dialects such as SVG, MathML, or XHTML). CSS is a cornerstone technology of the World Wide Web, alongside <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a>.
+        </p>
+        <p>
+            <strong>CSS</strong> is designed to enable the separation of content and presentation, including layout, colors, and fonts. This separation can improve content accessibility, since the content can be written without concern for its presentation; provide more flexibility and control in the specification of presentation characteristics; enable multiple web pages to share formatting by specifying the relevant CSS in a separate .css file, which reduces complexity and repetition in the structural content; and enable the .css file to be cached to improve the page load speed between the pages that share the file and its formatting.
+        </p>
+        <p>
+            The CSS specifications are maintained by the <a href="https://www.w3.org/"><em>World Wide Web Consortium (W3C)</em></a>. Internet media type (MIME type) text/css is registered for use with CSS by <a href="https://www.rfc-editor.org/info/rfc2318/"><em>RFC 2318</em></a> (March 1998). The W3C operates a free CSS validation service for CSS documents.
+        </p>
+        <p>
+            <strong>Style Sheets</strong>
+        </p>
+        <p>
+            A style sheet consists of a list of rules. Each rule or rule-set consists of one or more selectors, and a declaration block.
+        </p>
+        <p>
+            <strong>Selectors</strong>
+        </p>
+        <p>
+            In CSS, selectors declare which part of the markup a style applies to by matching tags and attributes in the markup itself.
+        </p>
+        <p><strong>Selector types</strong></p>
+        <p>Selectors may apply to the following:</p>
+            <ul>
+                <li>all elements of a specific type, e.g. the second-level headers h2</li>
+                <li>elements specified by attribute, in particular:</li>
+                    <ul>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/id">id</a>: an identifier unique within the document, denoted in the selector language by a hash prefix e.g. #id</li>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/class">class</a>: an identifier that can annotate multiple elements in a document, denoted by a dot prefix e.g. .classname (the phrase "CSS class", although sometimes used, is a misnomer, as element classes—specified with the HTML class attribute—is a markup feature that is distinct from browsers' CSS subsystems, and the related W3C/WHATWG standards work on document styles; see RDF and microformats for the origins of the "class" system of the Web content model).</li>
+                    </ul>
+                <li>elements depending on how they are placed relative to others in the document tree.</li>
+            </ul>
+        <p>Classes and IDs are case-sensitive, start with letters, and can include alphanumeric characters, hyphens, and underscores. A class may apply to any number of instances of any element. An ID may only be applied to a single element.</p>
+        <p><strong>Pseudo-classes</strong></p>
+        <p>Pseudo-classes are used in CSS selectors to permit formatting based on information that is not contained in the document tree.</p>
+        <p>One example of a widely used pseudo-class is :hover, which identifies content only when the user "points to" the visible element, usually by holding the mouse cursor over it. It is appended to a selector as in a:hover or #elementid:hover.</p>
+        <p>You can visit <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-classes">MDN-Pseudo-classes</a> to learn more about Pseudo-classes.</p>
+        <p><strong>From Styling to Layout</strong></p>
+        <p>Once you become comfortable with selectors, pseudo-classes, and pseudo-elements, CSS becomes much more interesting because you can start controlling the layout of your webpage.This is where properties such as display, position, flexbox, and grid become important.</p>
+        <p><strong>Flexbox</strong></p>
+        <p>Flexbox is a CSS layout system designed to arrange elements in rows or columns. It is especially useful when you want to align items or distribute space between them.</p>
+        <p>.container {<br> display: flex; <br>justify-content: center; <br>align-items: center; <br>}</p>
+        <p>With just a few properties, you can center elements, create navigation bars, arrange cards, and build responsive layouts.</p>
+        <p><strong>CSS Grid</strong></p>
+        <p>Another powerful layout system is CSS Grid. Unlike Flexbox, which is mainly designed for one-dimensional layouts, Grid is useful for creating layouts with both rows and columns.</p>
+        <p>.container { <br>display: grid;<br>grid-template-columns: repeat(3, 1fr); <br> gap: 20px; <br>}</p>
+        <p>This can be useful for creating image galleries, product cards, blog layouts, and other structured designs.</p>
+        <p><strong>Making Websites Responsive</strong></p>
+        <p>A website shouldn't only look good on a desktop computer. Today, people use different devices with different screen sizes.</p>
+        <p>CSS provides media queries to help developers create responsive websites.</p>
+        <p>@media (max-width: 768px) {<br> .container { <br>grid-template-columns: 1fr; <br>&ensp;}<br>}</p>
+        <p>This example changes the layout when the screen becomes smaller.</p>
+        <p><strong>The Journey Continues</strong></p>
+        <p>Learning CSS is not just about memorizing properties. It is about understanding how different CSS features work together.</p>
+        <p>You might start with simple colors and fonts, then learn selectors and pseudo-classes. After that, you can explore pseudo-elements, Flexbox, Grid, positioning, animations, and responsive design.</p>
+        <p>The more you practice, the more you begin to understand that CSS is not simply about making a webpage "look pretty." It is a tool for creating layouts, improving user experience, and bringing a website's design to life.</p>
+        <p><strong>CSS Related Topics:</strong></p>
+        <ul>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Transitions/Using">Transitions</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/animation">Animations</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Media_queries">Media Queries</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Cascading_variables/Using_custom_properties">CSS Variables</a></li>
+        </ul>
+    </article>
+    <aside>
+        <h4>Related posts</h4>
+        <ul>
+            <li>
+                <h4><a href="blog1.html">What is CSS&quest;</a></h4>
+                <p>By Jenny Bansil</p>
+            </li>
+            <li>
+                <h4><a href="blog2.html">What is JavaScript&quest;</a></h4>
+                <p>By Jenny Bansil</p>
+            </li>
+            <li>
+                <h4><a href="blog3.html">What is a Web Fradmework&quest;</a></h4>
+                <p>By Jenny Bansil</p>
+            </li>
+        </ul>
+    </aside>
+    <footer>
+        <p>Copyright &copy; 2026 by Jenny Bansil All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
